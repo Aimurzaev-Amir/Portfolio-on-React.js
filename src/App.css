@@ -14,3 +14,17 @@
   max-width: 1180px;
   margin: 0 auto;
 }
+.title-lines {
+  display: flex;
+  align-items: center;
+}
+.title-lines1 {
+  margin-bottom: 50px;
+}
+.title-lines2 {
+  margin-bottom: 90px;
+}
+.title-lines3 {
+  margin-bottom: 20px;
+}
+

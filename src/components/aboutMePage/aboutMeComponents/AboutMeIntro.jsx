@@ -1,34 +1,40 @@
 import React from "react";
-import "../MainPage.css"
-import "../../Media.css"
+import "../aboutMePage.css"
+import "../../../App.css"
 
-let Introduction = () => {
+let AboutMeIntro = () => {
   return (
-    <div class="intro wrapper" id="intro">
-      <div class="titleLines titleLines1">
+    <div class="aboutIntro wrapper">
+      <div class="titleLines titleLines2">
         <hr class="line" />
         <div class="title">
-          <h2>A brief Introduction</h2>
+          <h2>About me</h2>
         </div>
         <hr class="line" />
       </div>
-      <div class="introText" data-aos="fade-up" data-aos-duration="2000">
-        <p>
-          Hi I am a web developer & designer based in Almaty in Kazakhstan. I
-          believe working in a multi-disciplined approach brings creative
-          inspiration to my work. I am passionate about creating websites that
-          incorporate interactive design and modern technologies. I see every
-          new experience as an opportunity to learn. My favorite projects are
-          those that require me to push beyond my boundaries and acquire new
-          skills and knowledge in order to succeed.
-        </p>
+      <div class="aboutInfo">
+        <div class="aboutFrontEnd">
+          <img src="img/about-me-page/about-me-front-end.svg" alt="" />
+          <h2>development</h2>
+          <p>
+            I'm a coder first, designer second: I enjoy developing simple, efficient and scalable
+            websites that provide real value to the end user. I'm passionate about quality code,
+            best practices and performance.
+          </p>
+        </div>
+        <div class="aboutDesign">
+          <img src="img/about-me-page/about-me-design.svg" alt="" />
+          <h2>design</h2>
+          <p>
+            I also have a passion for web design. If you require a fresh, slick design for a new
+            brand or you need to update an existing site, look me up. I've formed an approach that
+            helps me create unique work; work that you can't get from a template.
+          </p>
+        </div>
       </div>
-      <div class="buttonPage" >
-        <a href="about-me.html">
-          <button class="buttonRMargin">LEARN MORE ABOUT ME</button>
-        </a>
+      <div class="buttonPage">
         <form method="get" action="Aimurzayev-Amir-front-end-summary.docx">
-          <button type="submit" class="downloadBtn">
+          <button type="submit" id="download-btn">
             <svg
               width="19"
               height="14"
@@ -53,4 +59,4 @@ let Introduction = () => {
   );
 };
 
-export default Introduction;
+export default AboutMeIntro;

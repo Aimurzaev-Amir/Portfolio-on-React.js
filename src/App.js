@@ -1,22 +1,21 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/Header/Header";
-import Footer from "./components/footer/Footer";
 import { BrowserRouter, Route } from "react-router-dom";
-import store from "./Redux/Store";
 import { Provider } from "react-redux";
-// import SuspenseHOC from "./Suspense/Suspense";
-import MainPage from "./components/mainPage/MainPage";
-// const MainPage = React.lazy(() => import("./components/mainPage/MainPage"));
+import store from "./Redux/Store";
+import SuspenseHOC from "./Suspense/Suspense";
+import Navbar from "./components/Header/Navbar";
+import Footer from "./components/footer/Footer";
+
+const MainPage = React.lazy(() => import("./components/mainPage/MainPage"));
+const AboutMePage = React.lazy(() => import("./components/aboutMePage/AboutMePage"));
 
 function App() {
   return (
     <div>
-      <Header />
-      <MainPage />
-      {/* <Route path="/friends" render={SuspenseHOC(FriendsContainer)} />
-            <Route path="/login" render={SuspenseHOC(Login)} />
-            <Route path="/edit" render={SuspenseHOC(EditProfile)} /> */}
+      <Navbar />
+      <Route exact path="/about-me" render={SuspenseHOC(MainPage)} />
+      <Route exact path="/" render={SuspenseHOC(AboutMePage)} />
       <Footer />
     </div>
   );

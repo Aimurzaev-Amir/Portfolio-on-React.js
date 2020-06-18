@@ -1,5 +1,6 @@
 import React from "react";
-import stl from "../../MainPage.module.css";
+import "../../MainPage.css";
+import "../../../Media.css"
 import WorkPreview from "./WorkPreview";
 
 let LatestWorks = (props) => {
@@ -18,23 +19,19 @@ let LatestWorks = (props) => {
   });
 
   return (
-    <div className={stl.latestWorks + " " + stl.wrapper}>
-      <div
-        className={
-          stl.titleLines + " " + stl.titleLines1 + " " + stl.titleWrapper
-        }
-      >
-        <hr className={stl.line} />
-        <div className={stl.title}>
-          <h2 className={stl.title3}>Latest works</h2>
+    <div class="latestWorks wrapper">
+      <div class="titleLines titleLines1 titleWrapper">
+        <hr class="line" />
+        <div class="title">
+          <h2>Latest works</h2>
         </div>
-        <hr className={stl.line} />
+        <hr class="line" />
       </div>
-      <div className={stl.workCards}> {/* owl theme */}
+      <div class="workCards">
         {works}
       </div>
 
-      <div className={stl.buttonPage}>
+      <div class="buttonPage">
         <a href="Portfolio.html">
           <button>View more projects</button>
         </a>

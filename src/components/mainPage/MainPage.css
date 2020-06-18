@@ -7,13 +7,94 @@
 }
 .wrapper {
   max-width: 1180px;
-  margin: 0 auto;
+  margin: 0 auto; 
 }
+.aboutMePage {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  background-color: #fff;
+  background-image: url(./img/main.png);
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+.aboutMeMain {
+  display: flex;
+}
+.aboutMeMainText {
+  margin-top: 142px;
+  z-index: 8;
+  max-width: 681px;
+}
+.aboutMeMainText h1 {
+  font-weight: 600;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+.aboutMeMain .aboutMeMainText p {
+  font-weight: 600;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.scrollIndicator {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.scrollIndicator span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  border-right: 3px solid #222;
+  border-bottom: 3px solid #222;
+  animation: animate-scroll 1s linear infinite;
+}
+@keyframes animate-scroll {
+  0% {
+    border-color: #222;
+  }
+  20% {
+    border-color: #222;
+  }
+  20.1%,
+  100% {
+    border-color: #6b6b6b;
+  }
+}
+.scrollIndicator span:nth-child(1) {
+  top: -30px;
+  left: -30px;
+  animation-delay: 0s;
+}
+.scrollIndicator span:nth-child(2) {
+  top: -22px;
+  left: -22px;
+  animation-delay: 0.2s;
+}
+.scrollIndicator span:nth-child(3) {
+  top: -14px;
+  left: -14px;
+  animation-delay: 0.4s;
+}
+
 .bgBlue {
   background-color: #f5f5f5;
 }
 .intro {
-  margin-top: 50px;
+  margin-top: 8px;
+  padding-top: 42px;
 }
 .titleLines {
   display: flex;
@@ -35,7 +116,7 @@
 }
 .introText {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   margin-bottom: 40px;
 }
 .intro .introText p {
@@ -178,7 +259,7 @@
   border-radius: 0 0 5px 5px;
 }
 .workCardInfo {
-  position: absolute;
+  position: absolute; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -214,15 +295,15 @@
 
 /* Latest blog articles block START */
 
-.latest-blog-articles {
+.latestBlogArticles {
   margin-top: 90px;
 }
-.articles-cards {
+.articlesCards {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
 }
-.article-card {
+.articleCard {
   position: relative;
   max-width: 374px;
   border: 0.5px solid #4d6172;
@@ -231,7 +312,7 @@
   background-color: #fff;
   cursor: pointer;
 }
-.article-hover {
+.articleHover {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -246,24 +327,25 @@
   border-radius: 5px;
   transition: 0.6s;
 }
-.article-hover a {
+.articleHover a {
   text-decoration: none;
   color: #fff;
 }
-.article-card:hover .article-hover {
+.articleCard:hover .articleHover {
   opacity: 1;
 }
-.articles-cards :last-child {
+.articlesCards :last-child {
   margin-right: 0px;
 }
-.article-card .article-img {
+.articleCard .articleImg {
   overflow: hidden;
 }
-.article-card .article-img img {
-  width: 100%;
+.articleCard .articleImg img {
+  /* width: 100%; */
   border-radius: 5px;
+  height: 220px;
 }
-.article-date {
+.articleDate {
   display: flex;
   justify-content: center;
   margin-left: 50px;
@@ -277,7 +359,7 @@
   transform: rotate(45deg);
   background-color: #4d6172;
 }
-.date-text {
+.dateText {
   padding-top: 12px;
   font-weight: normal;
   font-size: 16px;
@@ -290,39 +372,39 @@
   -o-transform: rotate(-45deg); /* Для Opera */
   transform: rotate(-45deg);
 }
-.atricle-text {
+.atricleText {
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 28px;
   text-transform: uppercase;
 }
-.atricle-text h3 {
+.atricleText h3 {
   font-size: 18px;
   font-weight: normal;
   margin-bottom: 25px;
 }
-.atricle-text p {
+.atricleText p {
   margin-top: 25px;
   margin-bottom: 65px;
   font-size: 14px;
   font-weight: normal;
   color: #4d6172;
 }
-.atricle-text hr {
+.atricleText hr {
   max-width: 130px;
 }
-.social-line {
+.socialLine {
   position: absolute;
   width: 100%;
   bottom: 10px;
   border-top: 0.5px solid #4d6172;
 }
-.article-social {
+.articleSocial {
   display: flex;
   margin-left: 45px;
   padding-top: 10px;
 }
-.article-share {
+.articleShare {
   padding-left: 20px;
   margin-left: 20px;
   border-left: 1px solid #4d6172;
@@ -332,27 +414,28 @@
 
 /* Ways to contact me block START */
 
-.contact-me {
+.contactMe {
   margin-top: 90px;
+  padding-bottom: 100px;
 }
-.title-contact {
+.titleContact {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.contact-me .title-contact h2 {
+.contactMe .titleContact h2 {
   font-weight: normal;
   font-size: 22px;
   text-transform: uppercase;
   text-align: center;
 }
-.contact-me .title-contact hr {
+.contactMe .titleContact hr {
   margin-top: 22px;
   width: 178px;
   margin-left: auto;
   margin-right: auto;
 }
-.contact-me .title-contact p {
+.contactMe .titleContact p {
   max-width: 568px;
   font-weight: normal;
   font-size: 18px;
@@ -361,18 +444,18 @@
   margin-left: auto;
   margin-right: auto;
 }
-.contact-window {
+.contactWindow {
   display: flex;
   justify-content: center;
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.contact-me .contact-form {
+.contactMe .contactForm {
   display: flex;
   flex-direction: column;
   width: 528px;
 }
-.contact-me .contact-form input {
+.contactMe .contactForm input {
   display: inline-block;
   max-width: 528px;
   height: 50px;
@@ -382,7 +465,7 @@
   color: #000;
   margin-bottom: 20px;
 }
-.contact-me .contact-form textarea[id="message"] {
+.contactMe .contactForm textarea[id="message"] {
   max-width: 528px;
   margin-bottom: 0px;
   padding-left: 51px;
@@ -391,30 +474,30 @@
   color: #000;
   padding-top: 14px;
 }
-.contact-info {
+.contactInfo {
   margin-top: 5px;
   margin-left: 52px;
 }
-.contact-info p {
+.contactInfo p {
   font-weight: normal;
   font-size: 18px;
   margin-top: 30px;
 }
-.contact-info a {
+.contactInfo a {
   color: #000;
 }
-.contact-info p:first-child {
+.contactInfo p:first-child {
   margin-top: 0;
 }
-.contact-info .contact-social p {
+.contactInfo .contact-social p {
   margin-top: 23px;
   text-transform: uppercase;
 }
-.social-list {
+.socialList {
   margin-top: 20px;
   display: flex;
 }
-.social-ellipse {
+.socialEllipse {
   border-radius: 100%;
   width: 50px;
   height: 50px;
@@ -423,23 +506,23 @@
   align-items: center;
   margin-right: 15px;
 }
-.behance-ellipse {
+.behanceEllipse {
   background: #1769ff;
 }
-.instagram-ellipse {
+.instagramEllipse {
   background: linear-gradient(180deg, #ffdd55 0%, #ff543e 51.56%, #c837ab 100%);
 }
-.linkedin-ellipse {
+.linkedinEllipse {
   background: #006599;
 }
-.vk-ellipse {
+.vkEllipse {
   background: #5181b8;
 }
-.social-ellipse img {
+.socialEllipse img {
   width: 30px;
   height: 30px;
 }
-.linkedin-ellipse img {
+.linkedinEllipse img {
   width: 28px;
   height: 28px;
 }
