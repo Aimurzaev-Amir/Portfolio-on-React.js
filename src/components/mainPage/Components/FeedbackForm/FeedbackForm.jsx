@@ -1,6 +1,7 @@
 import React from "react";
 import FormContactInfo from "./FormContactInfo";
-import "../../../Media.css"
+import "../../../Media.css";
+import "../../MainPage.css";
 
 let FeedbackForm = () => {
   return (
@@ -13,7 +14,6 @@ let FeedbackForm = () => {
           surely answer you.
         </p>
       </div>
-
       <div class="contactWindow">
         <form class="contactForm" id="mailForm">
           <input type="text" id="name" name="name" placeholder="Your beautiful name" />
@@ -21,7 +21,6 @@ let FeedbackForm = () => {
           <input type="email" id="email" name="email" placeholder="Your email adress" />
           <textarea id="message" rows="5" placeholder="Leave your message"></textarea>
         </form>
-
         <FormContactInfo />
       </div>
       <div class="buttonPage">

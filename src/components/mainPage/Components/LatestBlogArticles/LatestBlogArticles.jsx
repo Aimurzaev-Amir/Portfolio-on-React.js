@@ -1,7 +1,9 @@
 import React from "react";
 import "../../MainPage.css";
-import "../../../Media.css"
+import "../../../Media.css";
 import LatestBlogArticle from "./LatestBlogArticle";
+import BlockTitleText from "../../../../common/BlockTitle";
+import Button from "../../../../common/Button";
 
 let LatestBlogArticles = (props) => {
   let latestArticles = props.articles.map((article) => {
@@ -20,20 +22,12 @@ let LatestBlogArticles = (props) => {
   });
   return (
     <div class="latestBlogArticles wrapper">
-      <div class="titleLines titleLines1 titleWrapper">
-        <hr class="line" />
-        <div class="title">
-          <h2>Latest Blog Articles</h2>
-        </div>
-        <hr class="line" />
-      </div>
-
+      <BlockTitleText
+        titleClass={"titleLines titleLines1"}
+        blockTitleText={"Latest Blog Articles"}
+      />
       <div class="articlesCards">{latestArticles}</div>
-      <div class="buttonPage">
-        <a href="Blog.html">
-          <button>View more articles</button>
-        </a>
-      </div>
+      <Button btnUrl={"Blog.html"} btnText={"View more articles"}/>
     </div>
   );
 };

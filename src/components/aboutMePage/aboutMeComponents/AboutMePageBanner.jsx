@@ -1,5 +1,6 @@
 import React from "react";
 import "../aboutMePage.css"
+import "../../Media.css"
 import left from "../img/left.png";
 import right from "../img/right.png";
 

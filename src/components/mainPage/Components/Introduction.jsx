@@ -1,29 +1,27 @@
 import React from "react";
-import "../MainPage.css"
-import "../../Media.css"
+import "../MainPage.css";
+import "../../Media.css";
+import BlockTitleText from "../../../common/BlockTitle";
+import Button from "../../../common/Button";
 
 let Introduction = () => {
   return (
     <div class="intro wrapper" id="intro">
-      <div class="titleLines titleLines1">
-        <hr class="line" />
-        <div class="title">
-          <h2>A brief Introduction</h2>
-        </div>
-        <hr class="line" />
-      </div>
+      <BlockTitleText
+        titleClass={"titleLines titleLines1"}
+        blockTitleText={"A brief Introduction"}
+      />
       <div class="introText" data-aos="fade-up" data-aos-duration="2000">
         <p>
-          Hi I am a web developer & designer based in Almaty in Kazakhstan. I
-          believe working in a multi-disciplined approach brings creative
-          inspiration to my work. I am passionate about creating websites that
-          incorporate interactive design and modern technologies. I see every
-          new experience as an opportunity to learn. My favorite projects are
-          those that require me to push beyond my boundaries and acquire new
-          skills and knowledge in order to succeed.
+          Hi I am a web developer & designer based in Almaty in Kazakhstan. I believe working in a
+          multi-disciplined approach brings creative inspiration to my work. I am passionate about
+          creating websites that incorporate interactive design and modern technologies. I see every
+          new experience as an opportunity to learn. My favorite projects are those that require me
+          to push beyond my boundaries and acquire new skills and knowledge in order to succeed.
         </p>
       </div>
-      <div class="buttonPage" >
+
+      <div class="buttonPage">
         <a href="about-me.html">
           <button class="buttonRMargin">LEARN MORE ABOUT ME</button>
         </a>

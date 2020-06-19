@@ -58,7 +58,7 @@ header {
 .navItem:last-of-type {
   margin-right: 0px;
 }
-.navItemLink {
+.navItem a { /* navItemLink */
   padding: 35% 10px 35% 10px;
   text-decoration: none;
   font-weight: normal;

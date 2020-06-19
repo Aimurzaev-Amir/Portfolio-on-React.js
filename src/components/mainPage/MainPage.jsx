@@ -11,8 +11,8 @@ let MainPage = () => {
   return (
     <div class="bgBlue">
       <header class="aboutMePage">
-        <MainBanner />
-      </header>
+        <MainBanner /> 
+      </header> 
       <Introduction />
       <SkillsList />
       <LatestWorksContainer />

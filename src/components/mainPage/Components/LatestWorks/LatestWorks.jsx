@@ -1,7 +1,9 @@
 import React from "react";
 import "../../MainPage.css";
-import "../../../Media.css"
+import "../../../Media.css";
 import WorkPreview from "./WorkPreview";
+import BlockTitleText from "../../../../common/BlockTitle";
+import Button from "../../../../common/Button";
 
 let LatestWorks = (props) => {
   let works = props.works.map((work) => {
@@ -20,22 +22,9 @@ let LatestWorks = (props) => {
 
   return (
     <div class="latestWorks wrapper">
-      <div class="titleLines titleLines1 titleWrapper">
-        <hr class="line" />
-        <div class="title">
-          <h2>Latest works</h2>
-        </div>
-        <hr class="line" />
-      </div>
-      <div class="workCards">
-        {works}
-      </div>
-
-      <div class="buttonPage">
-        <a href="Portfolio.html">
-          <button>View more projects</button>
-        </a>
-      </div>
+      <BlockTitleText titleClass={"titleLines titleLines1"} blockTitleText={"Latest works"} />
+      <div class="workCards">{works}</div>
+      <Button btnUrl={"Portfolio.html"} btnText={"View more projects"} />
     </div>
   );
 };

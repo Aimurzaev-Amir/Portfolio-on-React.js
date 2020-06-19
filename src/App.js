@@ -14,8 +14,8 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Route exact path="/about-me" render={SuspenseHOC(MainPage)} />
-      <Route exact path="/" render={SuspenseHOC(AboutMePage)} />
+      <Route exact path="/" render={SuspenseHOC(MainPage)} />
+      <Route exact path="/about-me" render={SuspenseHOC(AboutMePage)} />
       <Footer />
     </div>
   );

@@ -7,18 +7,19 @@ import behance from "./img/socialNetworks/behance-footer.svg";
 import instagram from "./img/socialNetworks/instagram-footer.svg";
 import linkedin from "./img/socialNetworks/linkedin-footer.svg";
 import vk from "./img/socialNetworks/vk-footer.svg";
+import { NavLink } from "react-router-dom";
 
 let Navbar = () => {
   return (
     <div class="navOverlay" id="myHeader">
       <nav class="wrapper mainNav">
         <div class="logo">
-          <a href="index.html">
+          <NavLink to={"/"} class="navItemLink">
             <img class="logoDesktop" src={logo} alt="Aimurzaev Amir logo" />
-          </a>
-          <a href="index.html">
+          </NavLink>
+          <NavLink to={"/"} class="navItemLink">
             <img class="logoMobile" src={logoMobile} alt="Aimurzaev Amir m-logo" />
-          </a>
+          </NavLink>
         </div>
         <div class="hamburger">
           <div class="line"></div>
@@ -30,34 +31,33 @@ let Navbar = () => {
             <hr />
           </li>
           <li class="navItem">
-            {/* <NavLink to={"/profile"} activeclass="active}>Aimurzayev Amir</NavLink> */}
-            <a href="about-me.html" class="navItemLink">
+            <NavLink to={"/about-me"} class="navItemLink">
               About me
-            </a>
+            </NavLink>
           </li>
           <li class="menuLine">
             <hr />
           </li>
           <li class="navItem">
-            <a href="Portfolio.html" class="navItemLink">
+            <NavLink to={"/portfolio"} class="navItemLink">
               Portfolio
-            </a>
+            </NavLink>
           </li>
           <li class="menuLine">
             <hr />
           </li>
           <li class="navItem">
-            <a href="Blog.html" class="navItemLink">
+            <NavLink to={"/blog"} class="navItemLink">
               Blog
-            </a>
+            </NavLink>
           </li>
           <li class="menuLine">
             <hr />
           </li>
           <li class="navItem">
-            <a href="Contacts.html" class="navItemLink">
+            <NavLink to={"/contacts"} class="navItemLink">
               Contacts
-            </a>
+            </NavLink>
           </li>
           <li class="menuLine">
             <hr />
@@ -65,7 +65,7 @@ let Navbar = () => {
           <li>
             <div class="navSocial">
               <div class="socialItem">
-                <a href="">
+                <a href="#a">
                   <img src={linkedin} alt="linkedin Aimurzaev Amir" />
                 </a>
               </div>

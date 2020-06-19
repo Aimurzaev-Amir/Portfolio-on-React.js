@@ -1,20 +1,18 @@
 import React from "react";
-import "../aboutMePage.css"
-import "../../../App.css"
+import "../aboutMePage.css";
+import "../../../App.css";
+import "../../Media.css"
+import BlockTitleText from "../../../common/BlockTitle";
+import design from "../img/about-me-design.svg";
+import frontEnd from "../img/about-me-front-end.svg";
 
 let AboutMeIntro = () => {
   return (
     <div class="aboutIntro wrapper">
-      <div class="titleLines titleLines2">
-        <hr class="line" />
-        <div class="title">
-          <h2>About me</h2>
-        </div>
-        <hr class="line" />
-      </div>
+      <BlockTitleText titleClass={"titleLines titleLines2"} blockTitleText={"About me"} />
       <div class="aboutInfo">
         <div class="aboutFrontEnd">
-          <img src="img/about-me-page/about-me-front-end.svg" alt="" />
+          <img src={frontEnd} alt="" />
           <h2>development</h2>
           <p>
             I'm a coder first, designer second: I enjoy developing simple, efficient and scalable
@@ -23,7 +21,7 @@ let AboutMeIntro = () => {
           </p>
         </div>
         <div class="aboutDesign">
-          <img src="img/about-me-page/about-me-design.svg" alt="" />
+          <img src={design} alt="" />
           <h2>design</h2>
           <p>
             I also have a passion for web design. If you require a fresh, slick design for a new
@@ -34,7 +32,7 @@ let AboutMeIntro = () => {
       </div>
       <div class="buttonPage">
         <form method="get" action="Aimurzayev-Amir-front-end-summary.docx">
-          <button type="submit" id="download-btn">
+          <button type="submit" class="downloadBtn">
             <svg
               width="19"
               height="14"
