@@ -28,16 +28,16 @@
     margin-right: 30px;
     margin-left: 30px;
   }
-  .container-edu .card-edu {
+  .containerEdu .cardEdu {
     margin-right: 30px;
   }
-  .container-edu .card-edu:last-child {
+  .containerEdu .cardEdu:last-child {
     margin-right: 0px;
   }
-  .container-edu .card-edu {
+  .containerEdu .cardEdu {
     margin-bottom: 50px;
   }
-  .random-facts {
+  .randomFacts {
     grid-column-gap: 35px;
   }
   .photos {
@@ -49,24 +49,24 @@
   .photos :last-child {
     margin-right: unset;
   }
-  .work-describer {
+  .workDescriber {
     margin-top: -30vh;
   }
-  .work-main-info,
-  .work-screenshots {
+  .workMainInfo,
+  .workScreenshots {
     margin-left: 30px;
     margin-right: 30px;
   }
-  .work-intro-text {
+  .workIntroText {
     padding-top: 200px;
   }
-  .work-overview .design-info {
+  .workOverview .designInfo {
     flex-wrap: wrap;
   }
-  .work-overview .design-info .work-typography {
+  .workOverview .designInfo .workTypography {
     margin-bottom: 30px;
   }
-  .mobile-version-screenshots img {
+  .mobileVersionScreenshots img {
     padding: 20px;
   }
 }
@@ -111,84 +111,84 @@
     z-index: 8;
     max-width: 350px;
   }
-  .about-me-main-text h1 {
+  .aboutMeMainText h1 {
     font-size: 25px;
     margin-bottom: 50px;
   }
-  .about-me-main .about-me-main-text span {
+  .aboutMeMain .aboutMeMainText span {
     font-size: 25px;
   }
-  .container-main .side-text {
+  .containerMain .sideText {
     max-width: 200px;
   }
-  .side-text h1 {
+  .sideText h1 {
     font-size: 30px;
   }
-  .side-text p {
+  .sideText p {
     font-size: 16px;
   }
   .ticks p {
     font-size: 16px;
   }
-  .bar-text {
+  .barText {
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 20px;
     writing-mode: tb-rl;
     transform: rotate(-180deg);
   }
-  .bar-text-procent {
+  .barTextProcent {
     font-size: 24px;
   }
-  .bar-text-procent span {
+  .barTextProcent span {
     font-size: 17px;
   }
-  .facts-info ul li {
+  .factsInfo ul li {
     font-size: 16px;
   }
-  .blog-paper {
+  .blogPaper {
     margin-top: 40px;
     padding-top: 40px;
     transition: 1s;
   }
-  .blog-overlay .blog-article:first-child {
+  .blogOverlay .blogArticle:first-child {
     margin-top: 0;
   }
-  .blog-article {
+  .blogArticle {
     margin: 40px 0 40px 0;
     padding: 0px 30px 0px 30px;
     transition: 1s;
   }
-  .blog-article h1 {
+  .blogArticle h1 {
     font-size: 25px;
   }
 }
 
 @media (max-width: 750px) {
-  .nav-overlay {
+  .navOverlay {
     animation: unset;
     top: 0;
     width: 100%;
     z-index: 9999;
   }
-  .main-nav .line {
+  .mainNav .line {
     width: 30px;
     height: 3px;
     background: white;
     margin: 5px;
   }
-  .main-nav .hamburger {
+  .mainNav .hamburger {
     position: relative;
     cursor: pointer;
     margin-top: 15px;
     z-index: 10;
   }
-  .main-nav {
+  .mainNav {
     align-items: unset;
     height: 62px;
     transition: 1s;
   }
-  .main-nav .nav-links {
+  .mainNav .navLinks {
     padding-top: 8%;
     z-index: 9;
     justify-content: space-around;
@@ -204,214 +204,214 @@
     transition: all 1s ease-out;
     pointer-events: none;
   }
-  .main-nav .nav-links.open {
+  .mainNav .navLinks.open {
     clip-path: circle(1100px at 90% -10%);
     -webkit-clip-path: circle(1100px at 90% -10%);
     pointer-events: all;
   }
-  .main-nav .nav-links .nav-item {
+  .mainNav .navLinks .navItem {
     opacity: 0;
   }
-  .main-nav .nav-links .nav-item-link {
+  .mainNav .navLinks .navItemLink {
     font-size: 25px;
   }
-  .main-nav .nav-links .nav-item:nth-child(2) {
+  .mainNav .navLinks .navItem:nth-child(2) {
     transition: all 0.5s ease 0.2s;
   }
-  .main-nav .nav-links .nav-item:nth-child(4) {
+  .mainNav .navLinks .navItem:nth-child(4) {
     transition: all 0.5s ease 0.4s;
   }
-  .main-nav .nav-links .nav-item:nth-child(6) {
+  .mainNav .navLinks .navItem:nth-child(6) {
     transition: all 0.5s ease 0.6s;
   }
-  .main-nav .nav-links .nav-item:nth-child(8) {
+  .mainNav .navLinks .navItem:nth-child(8) {
     transition: all 0.5s ease 0.8s;
   }
-  .main-nav .nav-links .nav-item.fade {
+  .mainNav .navLinks .navItem.fade {
     opacity: 1;
   }
-  .nav-social {
+  .navSocial {
     margin-bottom: 25px;
     transition: all 0.5s ease 1s;
   }
-  .main-nav .nav-links .logo {
+  .mainNav .navLinks .logo {
     padding-top: 2px;
     padding-bottom: 2px;
   }
-  .main-nav .nav-links .nav-item {
+  .mainNav .navLinks .navItem {
     margin-right: 0px;
   }
-  .main-nav .nav-links .menu-line {
+  .mainNav .navLinks .menuLine {
     width: 100%;
   }
-  .logo-desktop {
+  .logoDesktop {
     display: none;
   }
   .logo {
     z-index: 10;
   }
-  .logo-mobile {
+  .logoMobile {
     display: flex;
     padding-top: 6px;
     padding-bottom: 6px;
   }
-  .nav-social {
+  .navSocial {
     display: flex;
   }
-  .nav-social :last-child {
+  .navSocial :last-child {
     margin-right: 0px;
   }
-  .social-item {
+  .socialItem {
     margin-right: 20px;
   }
-  .nav-links hr {
+  .navLinks hr {
     display: block;
   }
-  .swiper-container {
+  .swiperContainer {
     margin-top: 40px;
   }
-  .swiper-wrapper {
+  .swiperWrapper {
     height: 400px;
   }
   .work {
     display: grid;
   }
-  .work-info {
+  .workInfo {
     margin: 0 auto;
     text-align: center;
     max-height: 100px;
   }
-  .work-info h1 {
+  .workInfo h1 {
     margin-bottom: 20px;
   }
-  .work-info h2 {
+  .workInfo h2 {
     margin-bottom: 0px;
   }
-  .work-info .button-page {
+  .workInfo .buttonPage {
     position: absolute;
     bottom: -12px;
     left: 0;
     right: 0;
   }
-  .work-img img {
+  .workImg img {
     min-width: unset;
   }
 }
 @media (max-width: 700px) {
-  .container-main .side-text {
+  .containerMain .sideText {
     max-width: 159px;
   }
-  .left-side {
+  .leftSide {
     margin-top: 100px;
   }
-  .right-side {
+  .rightSide {
     margin-top: 100px;
   }
-  .leftSide-button {
+  .leftSideButton {
     justify-content: unset;
     align-items: unset;
   }
-  .work-intro-text {
+  .workIntroText {
     padding-top: 120px;
     padding-left: 30px;
     padding-right: 30px;
   }
-  .work-main-info {
+  .workMainInfo {
     flex-direction: column;
     align-items: unset;
   }
-  .work-overview {
+  .workOverview {
     padding-right: 0px;
   }
-  .work-overview .work-title h2 {
+  .workOverview .workTitle h2 {
     text-align: center;
   }
-  .work-overview .work-title p {
+  .workOverview .workTitle p {
     padding-left: 27px;
     border-left: 1px solid #6b6a6a;
     padding-bottom: 30px;
     font-size: 18px;
   }
-  .work-main-info {
+  .workMainInfo {
     margin-top: 15vh;
   }
-  .work-overview .design-info {
+  .workOverview .designInfo {
     margin-top: 0px;
     padding: 0 0 30px 30px;
     flex-direction: column;
     border-left: 1px solid #6b6a6a;
   }
-  .work-overview .design-info .work-typography {
+  .workOverview .designInfo .workTypography {
     margin-bottom: 0px;
   }
-  .work-overview .design-info .work-styles {
+  .workOverview .designInfo .workStyles {
     padding-top: 30px;
   }
-  .work-overview .design-info .work-styles .work-style {
+  .workOverview .designInfo .workStyles .workStyle {
     margin-top: 10px;
     color: #6b6a6a;
   }
-  .work-overview .design-info .work-colors {
+  .workOverview .designInfo .workColors {
     padding-top: 30px;
     text-align: left;
   }
-  .color-ellipses {
+  .colorEllipses {
     grid-template-columns: 43px 43px 43px 43px;
   }
-  .work-overview .design-info p {
+  .workOverview .designInfo p {
     margin-top: 10px;
   }
-  .desktop-version-screenshots {
+  .desktopVersionScreenshots {
     grid-template-columns: 1fr 1px;
   }
-  .desktop-version-screenshots img {
+  .desktopVersionScreenshots img {
     padding: 0 0 20px 0;
     border-bottom: 1px solid #6b6a6a;
   }
-  .mobile-version-screenshots {
+  .mobileVersionScreenshots {
     grid-template-columns: auto auto;
   }
-  .mobile-version-screenshots img {
+  .mobileVersionScreenshots img {
     padding: 0 0 20px 0;
     border-bottom: 1px solid #6b6a6a;
   }
-  .vertical-line {
+  .verticalLine {
     border-left: unset;
   }
-  .horizontal-line {
+  .horizontalLine {
     border-bottom: unset;
   }
 }
 @media (max-width: 600px) {
   .skills,
-  .latest-works,
-  .latest-blog-articles {
+  .latestWorks,
+  .latestBlogArticles {
     margin-top: 70px;
   }
-  .title-lines2 {
+  .titleLines2 {
     margin-bottom: 50px;
   }
-  .about-me-main {
+  .aboutMeMain {
     justify-content: center;
     text-align: center;
   }
-  .about-info {
+  .aboutInfo {
     display: grid;
     grid-row-gap: 40px;
     justify-content: center;
     margin-bottom: 40px;
   }
-  .edu-overlay {
+  .eduOverlay {
     margin: 80px 30px 0 30px;
   }
-  .container-edu .card-edu {
+  .containerEdu .cardEdu {
     margin-right: 0px;
   }
-  .random-facts-overlay,
-  .glance-cover {
+  .randomFactsOverlay,
+  .glanceCover {
     margin-top: 30px;
   }
-  .random-facts {
+  .randomFacts {
     display: grid;
     grid-template-columns: auto;
     grid-row-gap: 20px;
@@ -422,7 +422,7 @@
     grid-gap: 20px;
     justify-content: center;
   }
-  .facts-info ul li {
+  .factsInfo ul li {
     font-size: 16px;
   }
   .footer {
@@ -433,42 +433,42 @@
     padding-right: 20px;
     text-align: center;
   }
-  #button-r-margin {
+  .buttonRMargin {
     margin-right: 0px;
     margin-bottom: 20px;
   }
-  .button-page {
+  .buttonPage {
     flex-direction: column;
     align-items: center;
   }
-  .skills-cards {
+  .skillsCards {
     display: grid;
     grid-template-columns: auto;
   }
-  .skill-card {
+  .skillCard {
     margin-right: 0px;
     margin-bottom: 20px;
   }
-  .skills-cards :last-child {
+  .skillsCards :last-child {
     margin-right: 0px;
     margin-bottom: 0px;
   }
-  .contact-window {
+  .contactWindow {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  .contact-me .contact-form {
+  .contactMe .contactForm {
     display: flex;
     flex-direction: column;
     width: unset;
   }
-  .contact-me .contact-info {
+  .contactMe .contactInfo {
     margin-top: 21px;
   }
-  .nav-item {
+  .navItem {
     position: relative;
     margin-right: 10px;
   }
@@ -529,12 +529,12 @@
     width: 100%;
     padding: 7px 7px;
   }
-  .main-nav .nav-links {
+  .mainNav .navLinks {
     padding-top: 10%;
   }
 }
 @media (max-width: 325px) {
-  .main-nav .nav-links {
+  .mainNav .navLinks {
     padding-top: 13%;
   }
   .title h2 {
@@ -543,10 +543,10 @@
   .title1 {
     width: 250px;
   }
-  .nav-item {
+  .navItem {
     margin-right: 5px;
   }
-  .nav-item-link {
+  .navItemLink {
     padding-left: 1px;
     padding-right: 1px;
   }
@@ -574,7 +574,7 @@
 }
 
 /* Modal Content (Image) */
-.modal-content {
+.modalContent {
   margin: auto;
   display: block;
   width: 80%;

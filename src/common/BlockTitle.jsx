@@ -3,12 +3,12 @@ import "../App.css"
 
 let BlockTitleText = (props) => {
     return(
-        <div class={props.titleClass}>
-        <hr class="line" />
-        <div class="title">
+        <div className={props.titleClass}>
+        <hr className="line" />
+        <div className="title">
           <h2>{props.blockTitleText}</h2>
         </div>
-        <hr class="line" />
+        <hr className="line" />
       </div>
     )
 }

@@ -1,6 +1,6 @@
 .aboutMePage {
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  /* height: calc(var(--vh, 1vh) * 100); */
   background-color: #fff;
   background-image: url(./img/main.png);
   background-attachment: fixed;
@@ -76,9 +76,6 @@
   top: -14px;
   left: -14px;
   animation-delay: 0.4s;
-}
-.bgBlue {
-  background-color: #f5f5f5;
 }
 .intro {
   margin-top: 8px;

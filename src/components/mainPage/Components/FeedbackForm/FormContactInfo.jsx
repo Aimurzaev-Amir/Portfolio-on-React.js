@@ -8,7 +8,7 @@ import vk from "../../../Header/img/socialNetworks/vk-footer.svg";
 
 let FormContactInfo = () => {
   return (
-    <div class="contactInfo">
+    <div className="contactInfo">
       <p>
         E-mail
         <br />
@@ -23,29 +23,29 @@ let FormContactInfo = () => {
         <br />
         Almaty, Kazakhstan
       </p>
-      <div class="contactSocial">
+      <div className="contactSocial">
         <p>
           for more about me, i'm <br />
           also on social:
         </p>
-        <div class="socialList">
+        <div className="socialList">
           <a href="https://www.behance.net/Aimurzayev" target="_blank">
-            <div class="socialEllipse behanceEllipse">
+            <div className="socialEllipse behanceEllipse">
               <img src={behance} alt="behance Aimurzayev Amir" />
             </div>
           </a>
           <a href="https://www.instagram.com/amiraimurzayev/" target="_blank">
-            <div class="socialEllipse instagramEllipse">
+            <div className="socialEllipse instagramEllipse">
               <img src={instagram} alt="instagram Aimurzayev Amir" />
             </div>
           </a>
           <a href="#" target="_blank">
-            <div class="socialEllipse linkedinEllipse">
+            <div className="socialEllipse linkedinEllipse">
               <img src={linkedin} alt="linkedin Aimurzayev Amir" />
             </div>
           </a>
           <a href="https://vk.com/id140204225" target="_blank">
-            <div class="socialEllipse vkEllipse">
+            <div className="socialEllipse vkEllipse">
               <img src={vk} alt="vk Aimurzayev Amir" />
             </div>
           </a>

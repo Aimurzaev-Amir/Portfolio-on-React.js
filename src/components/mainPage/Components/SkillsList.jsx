@@ -11,9 +11,9 @@ import SkillCard from "./SkillCard";
 
 let SkillsList = () => {
   return (
-    <div class="skills wrapper">
+    <div className="skills wrapper">
       <BlockTitleText titleClass={"titleLines titleLines1"} blockTitleText={"This is what i do"} />
-      <div class="skillsCards">
+      <div className="skillsCards">
         <SkillCard img={idea} imgDescr={"Great ideas skill"} skillText={"Great ideas"} />
         <SkillCard img={design} imgDescr={"design skill"} skillText={"Professional design"} />
         <SkillCard img={FrontEnd} imgDescr={"front-end skill"} skillText={"HTMl + CSS + JS"} />

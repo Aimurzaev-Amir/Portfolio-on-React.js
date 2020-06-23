@@ -4,27 +4,27 @@ import "../../../Media.css"
 
 let WorkPreview = (props) => {
   return (
-    <div class="workCard">
-      <div class="cardInfoOverlay">
-        <div class="cardHeader">
-          <div class="elipses">
-            <div class="elipse"></div>
-            <div class="elipse"></div>
-            <div class="elipse"></div>
+    <div className="workCard">
+      <div className="cardInfoOverlay">
+        <div className="cardHeader">
+          <div className="elipses">
+            <div className="elipse"></div>
+            <div className="elipse"></div>
+            <div className="elipse"></div>
           </div>
-          <div class="toggleCard">
+          <div className="toggleCard">
             <hr />
             <hr />
             <hr />
           </div>
         </div>
-        <div class="cardBody">
+        <div className="cardBody">
           <img src={props.Preview} alt={props.previewDescription} />
         </div>
-        <div class="workCardInfo">
+        <div className="workCardInfo">
           <p>{props.smallDescription}</p>
           <h3>{props.Name}</h3>
-          <div class="buttonPage workCardButton">
+          <div className="buttonPage workCardButton">
             <a href={props.urlAdress}>
               <button>View projects</button>
             </a>

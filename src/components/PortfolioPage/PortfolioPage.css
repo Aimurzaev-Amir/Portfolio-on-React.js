@@ -1,0 +1,44 @@
+.portfolio {
+  margin-top: 50px;
+}
+.portfolio p {
+  margin: 0 auto;
+  max-width: 692px;
+  text-align: center;
+}
+.swiper-container {
+  margin-top: 90px;
+  margin-bottom: 100px;
+}
+.swiper-slide {
+  max-width: 800px;
+}
+.work {
+  display: flex;
+  justify-content: space-between;
+}
+.workInfo {
+  margin-top: 35px;
+  margin-right: 20px;
+}
+.workInfo h1 {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.workInfo h2 {
+  min-width: 227px;
+  font-weight: 600;
+  font-size: 22px;
+  color: #a39e9e;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+.workInfo h2 span {
+  padding-left: 23px;
+  padding-right: 23px;
+}
+.workImg img {
+  width: 100%;
+  min-width: 600px;
+}

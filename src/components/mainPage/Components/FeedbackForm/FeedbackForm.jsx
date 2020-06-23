@@ -5,8 +5,8 @@ import "../../MainPage.css";
 
 let FeedbackForm = () => {
   return (
-    <div class="contactMe wrapper">
-      <div class="titleContact">
+    <div className="contactMe wrapper">
+      <div className="titleContact">
         <h2>Ways to contact me</h2>
         <hr />
         <p>
@@ -14,8 +14,8 @@ let FeedbackForm = () => {
           surely answer you.
         </p>
       </div>
-      <div class="contactWindow">
-        <form class="contactForm" id="mailForm">
+      <div className="contactWindow">
+        <form className="contactForm" id="mailForm">
           <input type="text" id="name" name="name" placeholder="Your beautiful name" />
           <input type="tel" id="phone" name="phone" placeholder="Your number, please" />
           <input type="email" id="email" name="email" placeholder="Your email adress" />
@@ -23,7 +23,7 @@ let FeedbackForm = () => {
         </form>
         <FormContactInfo />
       </div>
-      <div class="buttonPage">
+      <div className="buttonPage">
         <button type="button" id="sendMail">
           Send message
         </button>

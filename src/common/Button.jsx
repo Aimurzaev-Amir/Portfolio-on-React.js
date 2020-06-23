@@ -3,7 +3,7 @@ import "../App.css";
 
 let Button = (props) => {
   return (
-    <div class="buttonPage">
+    <div className="buttonPage">
       <a href={props.btnUrl}>
         <button>{props.btnText}</button>
       </a>

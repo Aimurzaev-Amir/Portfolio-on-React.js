@@ -11,75 +11,75 @@ import { NavLink } from "react-router-dom";
 
 let Navbar = () => {
   return (
-    <div class="navOverlay" id="myHeader">
-      <nav class="wrapper mainNav">
-        <div class="logo">
-          <NavLink to={"/"} class="navItemLink">
-            <img class="logoDesktop" src={logo} alt="Aimurzaev Amir logo" />
+    <div className="navOverlay" id="myHeader">
+      <nav className="wrapper mainNav">
+        <div className="logo">
+          <NavLink to={"/"} className="navItemLink">
+            <img className="logoDesktop" src={logo} alt="Aimurzaev Amir logo" />
           </NavLink>
-          <NavLink to={"/"} class="navItemLink">
-            <img class="logoMobile" src={logoMobile} alt="Aimurzaev Amir m-logo" />
+          <NavLink to={"/"} className="navItemLink">
+            <img className="logoMobile" src={logoMobile} alt="Aimurzaev Amir m-logo" />
           </NavLink>
         </div>
-        <div class="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+        <div className="hamburger">
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
         </div>
-        <ul class="navLinks">
-          <li class="menu-line">
+        <ul className="navLinks">
+          <li className="menu-line">
             <hr />
           </li>
-          <li class="navItem">
-            <NavLink to={"/about-me"} class="navItemLink">
+          <li className="navItem">
+            <NavLink to={"/about-me"} className="navItemLink">
               About me
             </NavLink>
           </li>
-          <li class="menuLine">
+          <li className="menuLine">
             <hr />
           </li>
-          <li class="navItem">
-            <NavLink to={"/portfolio"} class="navItemLink">
+          <li className="navItem">
+            <NavLink to={"/portfolio"} className="navItemLink">
               Portfolio
             </NavLink>
           </li>
-          <li class="menuLine">
+          <li className="menuLine">
             <hr />
           </li>
-          <li class="navItem">
-            <NavLink to={"/blog"} class="navItemLink">
+          <li className="navItem">
+            <NavLink to={"/blog"} className="navItemLink">
               Blog
             </NavLink>
           </li>
-          <li class="menuLine">
+          <li className="menuLine">
             <hr />
           </li>
-          <li class="navItem">
-            <NavLink to={"/contacts"} class="navItemLink">
+          <li className="navItem">
+            <NavLink to={"/contacts"} className="navItemLink">
               Contacts
             </NavLink>
           </li>
-          <li class="menuLine">
+          <li className="menuLine">
             <hr />
           </li>
           <li>
-            <div class="navSocial">
-              <div class="socialItem">
+            <div className="navSocial">
+              <div className="socialItem">
                 <a href="#a">
                   <img src={linkedin} alt="linkedin Aimurzaev Amir" />
                 </a>
               </div>
-              <div class="socialItem">
+              <div className="socialItem">
                 <a href="https://www.behance.net/Aimurzayev">
                   <img src={behance} alt="behance Aimurzaev Amir" />
                 </a>
               </div>
-              <div class="socialItem">
+              <div className="socialItem">
                 <a href="https://vk.com/id140204225">
                   <img src={vk} alt="vk Aimurzaev Amir" />
                 </a>
               </div>
-              <div class="socialItem">
+              <div className="socialItem">
                 <a href="https://www.instagram.com/amiraimurzayev/">
                   <img src={instagram} alt="instagram Aimurzaev Amir" />
                 </a>

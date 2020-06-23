@@ -9,8 +9,8 @@ import MainBanner from "./Components/MainBanner";
 
 let MainPage = () => {
   return (
-    <div class="bgBlue">
-      <header class="aboutMePage">
+    <div className="bgBlue">
+      <header className="aboutMePage">
         <MainBanner /> 
       </header> 
       <Introduction />

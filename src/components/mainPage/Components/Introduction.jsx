@@ -6,12 +6,12 @@ import Button from "../../../common/Button";
 
 let Introduction = () => {
   return (
-    <div class="intro wrapper" id="intro">
+    <div className="intro wrapper" id="intro">
       <BlockTitleText
         titleClass={"titleLines titleLines1"}
         blockTitleText={"A brief Introduction"}
       />
-      <div class="introText" data-aos="fade-up" data-aos-duration="2000">
+      <div className="introText" data-aos="fade-up" data-aos-duration="2000">
         <p>
           Hi I am a web developer & designer based in Almaty in Kazakhstan. I believe working in a
           multi-disciplined approach brings creative inspiration to my work. I am passionate about
@@ -21,12 +21,12 @@ let Introduction = () => {
         </p>
       </div>
 
-      <div class="buttonPage">
+      <div className="buttonPage">
         <a href="about-me.html">
-          <button class="buttonRMargin">LEARN MORE ABOUT ME</button>
+          <button className="buttonRMargin">LEARN MORE ABOUT ME</button>
         </a>
         <form method="get" action="Aimurzayev-Amir-front-end-summary.docx">
-          <button type="submit" class="downloadBtn">
+          <button type="submit" className="downloadBtn">
             <svg
               width="19"
               height="14"

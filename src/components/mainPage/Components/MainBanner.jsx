@@ -1,12 +1,13 @@
 import React from "react";
 import "../MainPage.css";
 import "../../Media.css"
+
 import Typical from "react-typical";
 
 let MainBanner = () => { 
   return (
-    <div class="aboutMeMain wrapper">
-      <div class="aboutMeMainText">
+    <div className="aboutMeMain wrapper">
+      <div className="aboutMeMainText">
         <h1>I'm aimurzayev amir, an front-end Developer & UI/UX Designer.</h1>
         <Typical
           steps={[
@@ -24,7 +25,7 @@ let MainBanner = () => {
         />
         <span id="typed"></span>
       </div>
-      <div class="scrollIndicator" id="scroll-indicator">
+      <div className="scrollIndicator" id="scroll-indicator">
         <span></span>
         <span></span>
         <span></span>

@@ -21,9 +21,9 @@ let LatestWorks = (props) => {
   });
 
   return (
-    <div class="latestWorks wrapper">
+    <div className="latestWorks wrapper">
       <BlockTitleText titleClass={"titleLines titleLines1"} blockTitleText={"Latest works"} />
-      <div class="workCards">{works}</div>
+      <div className="workCards">{works}</div>
       <Button btnUrl={"Portfolio.html"} btnText={"View more projects"} />
     </div>
   );

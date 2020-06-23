@@ -9,6 +9,7 @@ let LatestBlogArticles = (props) => {
   let latestArticles = props.articles.map((article) => {
     return (
       <LatestBlogArticle
+        key={article.id}
         name={article.articleName}
         date={article.articleDate}
         description={article.articleSmallDescription}
@@ -21,13 +22,13 @@ let LatestBlogArticles = (props) => {
     );
   });
   return (
-    <div class="latestBlogArticles wrapper">
+    <div className="latestBlogArticles wrapper">
       <BlockTitleText
         titleClass={"titleLines titleLines1"}
         blockTitleText={"Latest Blog Articles"}
       />
-      <div class="articlesCards">{latestArticles}</div>
-      <Button btnUrl={"Blog.html"} btnText={"View more articles"}/>
+      <div className="articlesCards">{latestArticles}</div>
+      <Button btnUrl={"Blog.html"} btnText={"View more articles"} />
     </div>
   );
 };

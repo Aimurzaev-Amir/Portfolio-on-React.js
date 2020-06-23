@@ -4,31 +4,31 @@ import "../../MainPage.css"
 
 let LatestBlogArticle = (props) => {
   return (
-    <div class="articleCard">
-      <div class="articleImg">
+    <div className="articleCard">
+      <div className="articleImg">
         <img src={props.preview} alt={props.previewDescription} />
       </div>
-      <div class="articleDate">
-        <div class="dateText">
+      <div className="articleDate">
+        <div className="dateText">
           <p>{props.date}</p>
         </div>
       </div>
-      <div class="atricleText">
+      <div className="atricleText">
         <h3>{props.name}</h3>
         <hr />
         <p>{props.description}</p>
       </div>
-      <div class="socialLine">
-        <div class="articleSocial">
-          <div class="articleComments">
+      <div className="socialLine">
+        <div className="articleSocial">
+          <div className="articleComments">
             <p>{props.comments} comments</p>
           </div>
-          <div class="articleShare">
+          <div className="articleShare">
             <p>{props.likes} likes</p>
           </div>
         </div>
       </div>
-      <div class="articleHover">
+      <div className="articleHover">
         <a href={props.urlAdress}>
           <h3>Read more...</h3>
         </a>

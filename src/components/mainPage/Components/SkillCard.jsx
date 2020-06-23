@@ -4,7 +4,7 @@ import "../../Media.css";
 
 let SkillCard = (props) => {
     return(
-        <div class="skillCard" data-aos="flip-right" data-aos-delay="200">
+        <div className="skillCard" data-aos="flip-right" data-aos-delay="200">
           <img src={props.img} alt={props.imgDescr} />
           <p>{props.skillText}</p>
         </div>
