@@ -54,7 +54,8 @@
   margin-right: 0px;
 }
 .navItemLink {
-  padding: 35% 10px 35% 10px;
+  /* padding: 35% 10px 35% 10px; */
+  padding: 40px 10px ;
   text-decoration: none;
   font-weight: normal;
   font-size: 18px;

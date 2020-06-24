@@ -1,6 +1,6 @@
-body {
+/* body {
   position: relative;
-}
+} */
 .preloader {
   position: absolute;
   height: 100vh;
@@ -9,6 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: ease-in-out 0.3s;
 }
 .preloader img {
   width: 100px;

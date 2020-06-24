@@ -7,6 +7,7 @@ import SuspenseHOC from "./Suspense/Suspense";
 import Navbar from "./components/Header/Navbar";
 import Footer from "./components/footer/Footer";
 
+const BlogPageContainer = React.lazy(() => import("./components/BlogPage/BlogPageContainer"));
 const PortfolioPage = React.lazy(() => import("./components/PortfolioPage/PortfolioPage"));
 const MainPage = React.lazy(() => import("./components/mainPage/MainPage"));
 const AboutMePage = React.lazy(() => import("./components/aboutMePage/AboutMePage"));
@@ -22,6 +23,7 @@ function App() {
       <Route exact path="/about-me" render={SuspenseHOC(AboutMePage)} />
       <Route exact path="/contacts" render={SuspenseHOC(FeedbackForm)} />
       <Route exact path="/portfolio" render={SuspenseHOC(PortfolioPage)} />
+      <Route exact path="/blog" render={SuspenseHOC(BlogPageContainer)} />
       <Footer />
     </div>
   );

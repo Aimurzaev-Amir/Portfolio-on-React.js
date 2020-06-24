@@ -25,7 +25,7 @@ let PortfolioPage = () => {
     loop: true,
   };
   return (
-    <div>
+    <div className="bgWhite">
       <div className="portfolio wrapper">
         <div className="titleLines titleLines1">
           <hr className="line" />
