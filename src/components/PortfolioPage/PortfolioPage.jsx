@@ -1,10 +1,9 @@
 import React from "react";
 import Swiper from "react-id-swiper";
 import "swiper/css/swiper.css";
-import img from "./img/work-bedentist/bedentist-work-logo.png";
 import "./PortfolioPage.css";
 
-let PortfolioPage = () => {
+let PortfolioPage = (props) => {
   const params = {
     effect: "coverflow",
     grabCursor: true,
@@ -24,6 +23,26 @@ let PortfolioPage = () => {
     },
     loop: true,
   };
+
+  let Works = props.works.map((work) => {
+    return (
+      <div className="work">
+        <div className="workInfo">
+          <h1>{work.workName}</h1>
+          <h2>{work.whatIDid}</h2>
+          <div className="buttonPage leftSideButton">
+            <a href="works/work-KazTransGas.html">
+              <button>View project</button>
+            </a>
+          </div>
+        </div>
+        <div className="workImg">
+          <img src={work.workPhoto} alt="" />
+        </div>
+      </div>
+    );
+  });
+
   return (
     <div className="bgWhite">
       <div className="portfolio wrapper">
@@ -39,43 +58,7 @@ let PortfolioPage = () => {
           Each project has a description, design approaches taken and technologies used.
         </p>
       </div>
-      <Swiper {...params}>
-        <div className="work">
-          <div className="workInfo">
-            <h1>KazTransGas</h1>
-            <h2>
-              UX <span>|</span> UI <span>|</span> <br />
-              WEB DEVELOPMENT
-            </h2>
-            <div className="buttonPage leftSideButton">
-              <a href="works/work-KazTransGas.html">
-                <button>View project</button>
-              </a>
-            </div>
-          </div>
-          <div className="workImg">
-            <img src={img} alt="" />
-          </div>
-        </div>
-
-        <div className="work">
-          <div className="workInfo">
-            <h1>KazTransGas</h1>
-            <h2>
-              UX <span>|</span> UI <span>|</span> <br />
-              WEB DEVELOPMENT
-            </h2>
-            <div className="buttonPage leftSideButton">
-              <a href="works/work-KazTransGas.html">
-                <button>View project</button>
-              </a>
-            </div>
-          </div>
-          <div className="workImg">
-            <img src={img} alt="" />
-          </div>
-        </div>
-      </Swiper>
+      <Swiper {...params}>{Works}</Swiper>
     </div>
   );
 };

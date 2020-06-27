@@ -8,7 +8,7 @@ import Navbar from "./components/Header/Navbar";
 import Footer from "./components/footer/Footer";
 
 const BlogPageContainer = React.lazy(() => import("./components/BlogPage/BlogPageContainer"));
-const PortfolioPage = React.lazy(() => import("./components/PortfolioPage/PortfolioPage"));
+const PortfolioPageContainer = React.lazy(() => import("./components/PortfolioPage/PortfolioPageContainer"));
 const MainPage = React.lazy(() => import("./components/mainPage/MainPage"));
 const AboutMePage = React.lazy(() => import("./components/aboutMePage/AboutMePage"));
 const FeedbackForm = React.lazy(() =>
@@ -22,7 +22,7 @@ function App() {
       <Route exact path="/" render={SuspenseHOC(MainPage)} />
       <Route exact path="/about-me" render={SuspenseHOC(AboutMePage)} />
       <Route exact path="/contacts" render={SuspenseHOC(FeedbackForm)} />
-      <Route exact path="/portfolio" render={SuspenseHOC(PortfolioPage)} />
+      <Route exact path="/portfolio" render={SuspenseHOC(PortfolioPageContainer)} />
       <Route exact path="/blog" render={SuspenseHOC(BlogPageContainer)} />
       <Footer />
     </div>

@@ -1,0 +1,341 @@
+.work-header {
+    height: 100vh;
+    position: relative;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+  
+  .work-move-bg {
+    background-image: url(../img/work-move/main-move-bg.jpg);
+  }
+  .work-bedentist-bg {
+    background-image: url(../img/work-bedentist/main-img.png);
+  }
+  .work-kaztransgas-bg {
+    background-image: url(../img/work-kaztransgas/kaztransgas-main-bg.jpg);
+  }
+  .work-portfolio-bg {
+    background: linear-gradient(180deg, #000000 29.17%, rgba(0, 0, 0, 0) 100%);
+    box-shadow: unset;
+  }
+  
+  /* Main description block STARt */
+  
+  .work-describer {
+    position: relative;
+    margin-top: -44vh;
+  }
+  .work-main-logo {
+    text-align: center;
+  }
+  .work-main-logo img {
+    width: 100%;
+    max-width: 1059.42px;
+  }
+  .work-intro-text {
+    padding-top: 90px;
+    text-align: center;
+    max-width: 675px;
+    color: #fff;
+  }
+  .work-intro-text h1 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 28px;
+  }
+  .work-intro-text p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .work-main-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .work-overview {
+    max-width: 815px;
+    margin-right: 50px;
+  }
+  .work-overview .work-title h2 {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+  .work-overview .work-title p {
+    font-weight: normal;
+    font-size: 22px;
+    color: #6b6a6a;
+  }
+  .work-overview .design-info {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .work-overview .design-info h2 {
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  .work-overview .design-info p {
+    margin-top: 30px;
+    font-weight: normal;
+    font-size: 18px;
+    color: #6b6a6a;
+  }
+  .work-overview .design-info .work-styles .work-style {
+    margin-top: 16px;
+    color: #6b6a6a;
+  }
+  .work-overview .design-info .work-styles .work-portfolio-h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .work-overview .design-info .work-styles .work-portfolio-h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .work-overview .design-info .work-styles .work-portfolio-h3 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+  }
+  .work-overview .design-info .work-styles .work-portfolio-h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .work-overview .design-info .work-styles .work-move-h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .work-overview .design-info .work-styles .work-move-h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .work-overview .design-info .work-styles .work-move-h3 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+  }
+  .work-overview .design-info .work-styles .work-move-h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .work-overview .design-info .work-styles .work-kaztransgas-h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .work-overview .design-info .work-styles .work-kaztransgas-h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .work-overview .design-info .work-styles .work-kaztransgas-h3 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+  }
+  .work-overview .design-info .work-styles .work-bedentist-h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 43px;
+  }
+  .work-overview .design-info .work-styles .work-bedentist-h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+  }
+  .work-overview .design-info .work-styles .work-bedentist-h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+  }
+  .work-overview .design-info .work-styles .work-bedentist-h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+  }
+  .work-overview .design-info .work-styles .work-bedentist-h5 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+  }
+  .work-overview .design-info .work-styles .work-bedentist-h6 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  .work-overview .design-info .work-styles .work-bedentist-h7 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  .work-colors {
+    text-align: center;
+  }
+  .color-ellipses {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 43px 43px;
+    grid-row-gap: 12px;
+    grid-column-gap: 18px;
+  }
+  .color-ellipse {
+    width: 43px;
+    height: 43px;
+    border-radius: 100%;
+  }
+  .portfolio-ellips1 {
+    background: #e7b02f;
+  }
+  .portfolio-ellips2 {
+    background: #000;
+  }
+  .portfolio-ellips3 {
+    background: #f5f5f5;
+    border: 0.6px solid #000000;
+  }
+  .portfolio-ellips4 {
+    background: #ffffff;
+    border: 0.6px solid #000000;
+  }
+  .move-ellips1 {
+    background: #da4b52;
+  }
+  .move-ellips2 {
+    background: #000;
+  }
+  .move-ellips3 {
+    background: #8f8585;
+  }
+  .move-ellips4 {
+    background: #585858;
+  }
+  .kaztransgas-ellips1 {
+    background: #007ab9;
+  }
+  .kaztransgas-ellips2 {
+    background: #000;
+  }
+  .kaztransgas-ellips3 {
+    background: #ffffff;
+    border: 0.6px solid #000000;
+  }
+  .kaztransgas-ellips4 {
+    background: #f3f4f4;
+    border: 0.6px solid #000000;
+  }
+  .bedentist-ellips1 {
+    background: #2a93c9;
+  }
+  .bedentist-ellips2 {
+    background: #65b6df;
+  }
+  .bedentist-ellips3 {
+    background: #a4a8aa;
+  }
+  .bedentist-ellips4 {
+    background: #616262;
+  }
+  .bedentist-ellips5 {
+    background: #000;
+  }
+  .bedentist-ellips6 {
+    background: #eaeaea;
+  }
+  .work-details {
+    max-width: 230px;
+    padding-left: 27px;
+    border-left: 1px solid #6b6a6a;
+  }
+  .work-details :last-child {
+    margin-bottom: 0;
+  }
+  .work-details h3 {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  .work-details p {
+    font-weight: normal;
+    font-size: 18px;
+    color: #6b6a6a;
+  }
+  .details-info {
+    margin-bottom: 30px;
+  }
+  
+  /* Main description block END */
+  
+  /* WORK Screenshots block START */
+  
+  .title-lines3 {
+    margin-bottom: 20px;
+  }
+  .work-screenshots {
+    margin-top: 90px;
+  }
+  .sections-paragraph {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #6b6a6a;
+  }
+  .view-all-paragraph {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #6b6a6a;
+    margin-bottom: 20px;
+  }
+  .leftSide-button {
+    justify-content: left;
+    align-items: baseline;
+  }
+  
+  /* desktop-images block*/
+  
+  .desktop-version-screenshots {
+    display: grid;
+    grid-template-columns: auto 1px auto;
+  
+    margin: 0 auto;
+  }
+  .vertical-line {
+    border-left: 1px solid #6b6a6a;
+  }
+  .horizontal-line {
+    border-bottom: 1px solid #6b6a6a;
+  }
+  .desktop-version-screenshots img {
+    padding: 30px;
+    width: 100%;
+  }
+  
+  /* mobile-images block*/
+  
+  .mobile-version-section {
+    margin-top: 90px;
+  }
+  .mobile-version-screenshots {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto 1px auto 1px auto;
+    text-align: center;
+  }
+  .mobile-version-screenshots img {
+    width: 100%;
+    padding: 50px;
+  }
+  
