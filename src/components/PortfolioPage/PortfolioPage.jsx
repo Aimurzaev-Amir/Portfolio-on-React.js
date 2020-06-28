@@ -2,6 +2,7 @@ import React from "react";
 import Swiper from "react-id-swiper";
 import "swiper/css/swiper.css";
 import "./PortfolioPage.css";
+import { NavLink } from "react-router-dom";
 
 let PortfolioPage = (props) => {
   const params = {
@@ -31,9 +32,12 @@ let PortfolioPage = (props) => {
           <h1>{work.workName}</h1>
           <h2>{work.whatIDid}</h2>
           <div className="buttonPage leftSideButton">
-            <a href="works/work-KazTransGas.html">
+            <NavLink to={"/kaztransgas"} className="navItemLink">
               <button>View project</button>
-            </a>
+            </NavLink>
+            {/* <a href="works/work-KazTransGas.html">
+              <button>View project</button>
+            </a> */}
           </div>
         </div>
         <div className="workImg">
