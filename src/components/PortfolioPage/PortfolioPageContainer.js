@@ -13,7 +13,7 @@ let PortfolioPageContainer = (props) => {
         {/* <Route exact path="/portfolio" render={SuspenseHOC(PortfolioPage)}  /> */}
         <Route exact path="/portfolio" component={() => <PortfolioPage works={props.works} />}/>
         {/* <PortfolioPage works={props.works} /> */}
-        <Route exact path="/kaztransgas" render={SuspenseHOC(KazTransGas)} />
+        <Route exact path="/portfolio/kaztransgas" render={SuspenseHOC(KazTransGas)} />
       </BrowserRouter>
     </div>
   );

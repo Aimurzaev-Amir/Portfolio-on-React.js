@@ -32,7 +32,7 @@ let PortfolioPage = (props) => {
           <h1>{work.workName}</h1>
           <h2>{work.whatIDid}</h2>
           <div className="buttonPage leftSideButton">
-            <NavLink to={"/kaztransgas"} className="navItemLink">
+            <NavLink to={"/portfolio/kaztransgas"} className="navItemLink">
               <button>View project</button>
             </NavLink>
             {/* <a href="works/work-KazTransGas.html">
