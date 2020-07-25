@@ -7,7 +7,7 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   }
   
-  .workMoveBg {
+  /* .workMoveBg {
     background-image: url(../../../Redux/img/work-move/main-move-bg.jpg);
   }
   .workBedentistBg {
@@ -19,7 +19,7 @@
   .workPortfolioBg {
     background: linear-gradient(180deg, #000000 29.17%, rgba(0, 0, 0, 0) 100%);
     box-shadow: unset;
-  }
+  } */
   
   /* Main description block STARt */
   
@@ -86,11 +86,11 @@
     font-size: 18px;
     color: #6b6a6a;
   }
-  .workOverview .designInfo .workStyles .work-style {
+  .workOverview .designInfo .workStyles .workStyle {
     margin-top: 16px;
     color: #6b6a6a;
   }
-  .workOverview .designInfo .workStyles .workPortfolioH1 {
+  /* .workOverview .designInfo .workStyles .workPortfolioH1 {
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -179,7 +179,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-  }
+  } */
   .workColors {
     text-align: center;
   }
@@ -194,8 +194,38 @@
     width: 43px;
     height: 43px;
     border-radius: 100%;
+    border: 0.6px solid #000000;
   }
-  .portfolioEllips1 {
+
+  TABLE {
+    margin: auto;
+    border-collapse: collapse; 
+    border: 2px solid white; 
+   }
+   .desktopScreenshots{
+     margin-bottom: 90px;
+   }
+   .desktopScreenshotsRow {
+    padding: 3px; 
+    border: 1px solid #6b6a6a;
+   }
+   .desktopScreenshotsRow img {
+     padding: 25px 25px;
+     width: 100%;
+   }
+
+   .mobileScreenshotsRow {
+    max-width: 393px;
+    padding: 3px;
+    border: 1px solid #6b6a6a;
+  }
+  .mobileScreenshotsRow img {
+    padding: 30px;
+    max-width: 350px;
+    width: 100%;
+  }
+
+  /* .portfolioEllips1 {
     background: #e7b02f;
   }
   .portfolioEllips2 {
@@ -252,7 +282,7 @@
   }
   .bedentistEllips6 {
     background: #eaeaea;
-  }
+  } */
   .workDetails {
     max-width: 230px;
     padding-left: 27px;
@@ -285,6 +315,7 @@
   }
   .workScreenshots {
     margin-top: 90px;
+    padding-bottom: 100px;
   }
   .sectionsParagraph {
     margin-bottom: 50px;
@@ -306,7 +337,7 @@
   
   /* desktop-images block*/
   
-  .desktopVersionScreenshots {
+  /* .desktopVersionScreenshots {
     display: grid;
     grid-template-columns: auto 1px auto;
   
@@ -321,11 +352,11 @@
   .desktopVersionScreenshots img {
     padding: 30px;
     width: 100%;
-  }
+  } */
   
   /* mobile-images block*/
   
-  .mobileVersionSection {
+  /* .mobileVersionSection {
     margin-top: 90px;
   }
   .mobileVersionScreenshots {
@@ -337,5 +368,5 @@
   .mobileVersionScreenshots img {
     width: 100%;
     padding: 50px;
-  }
+  } */
   
