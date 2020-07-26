@@ -6,18 +6,20 @@ import "./PortfolioPageWorks.css";
 let KazTransGas = (props) => {
   let workStyle = props.works.additional.textStyles.map((style) => {
     return (
-      <p className="workStyle" style={{ fontSize: style.size + "px", fontWeight: style.weight }}>
+      <p key = {style.id} className="workStyle" style={{ fontSize: style.size + "px", fontWeight: style.weight }}>
         {style.name}
       </p>
     );
   });
 
+  console.log(props.currentWorkId)
+
   let workColors = props.works.additional.colors.map((color) => {
-    return <div className="colorEllipse" style={{ background: color.color }}></div>;
+    return <div key = {color.id} className="colorEllipse" style={{ background: color.color }}></div>;
   });
 
   let whatIDid = props.works.additional.whatIDid.map((point) => {
-    return <p> {point.name}</p>;
+    return <p key = {point.id}> {point.name}</p>;
   });
 
   return (

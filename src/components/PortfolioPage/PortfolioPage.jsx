@@ -27,13 +27,13 @@ let PortfolioPage = (props) => {
 
   let Works = props.works.map((work) => {
     return (
-      <div className="work">
+      <div key={work.id} className="work">
         <div className="workInfo">
           <h1>{work.workName}</h1>
           <h2>{work.whatIDid}</h2>
           <div className="buttonPage leftSideButton">
             <NavLink to={work.urlAdress} className="navItemLink">
-              <button>View project</button>
+              <button onClick={() => {props.setWorkId(work.id);}} >View project</button>
             </NavLink>
           </div>
         </div>

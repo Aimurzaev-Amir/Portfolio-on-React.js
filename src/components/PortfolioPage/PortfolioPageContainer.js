@@ -2,19 +2,23 @@ import React from "react";
 import PortfolioPage from "./PortfolioPage";
 import { connect } from "react-redux";
 import { Route, BrowserRouter } from "react-router-dom";
-// import SuspenseHOC from "../../Suspense/Suspense";
 import KazTransGas from "./PortfolioPageWorks/KazTransGas";
-// const KazTransGas = React.lazy(() => import("./PortfolioPageWorks/KazTransGas"));
-// const PortfolioPage = React.lazy(() => import("./PortfolioPage"));
+import { setWorkId } from "../../Redux/WorksReducer";
 
 let PortfolioPageContainer = (props) => {
   return (
     <div>
       <BrowserRouter>
-        {/* <Route exact path="/portfolio" render={SuspenseHOC(PortfolioPage)}  /> */}
-        <Route exact path="/portfolio" component={() => <PortfolioPage works={props.works} />}/>
-        {/* <PortfolioPage works={props.works} /> */}
-        <Route exact path="/portfolio/kaztransgas" component={() => <KazTransGas works={props.works[0]} />} />
+        <Route
+          exact
+          path="/portfolio"
+          component={() => <PortfolioPage works={props.works} setWorkId={props.setWorkId} />}
+        />
+        <Route
+          exact
+          path={props.works[props.currentWorkId].urlAdress}
+          component={() => <KazTransGas works={props.works[props.currentWorkId]} currentWorkId={props.currentWorkId} />}
+        />
       </BrowserRouter>
     </div>
   );
@@ -23,7 +27,8 @@ let PortfolioPageContainer = (props) => {
 let mapStateToProps = (state) => {
   return {
     works: state.works.Works,
+    currentWorkId: state.works.currentWorkId,
   };
 };
 
-export default connect(mapStateToProps, {})(PortfolioPageContainer);
+export default connect(mapStateToProps, { setWorkId })(PortfolioPageContainer);
