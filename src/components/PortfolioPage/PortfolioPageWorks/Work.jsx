@@ -4,27 +4,34 @@ import Button from "../../../common/Button";
 import "./PortfolioPageWorks.css";
 
 let KazTransGas = (props) => {
+  console.log(props.currentWorkId);
+
   let workStyle = props.works.additional.textStyles.map((style) => {
     return (
-      <p key = {style.id} className="workStyle" style={{ fontSize: style.size + "px", fontWeight: style.weight }}>
+      <p
+        key={style.id}
+        className="workStyle"
+        style={{ fontSize: style.size + "px", fontWeight: style.weight }}
+      >
         {style.name}
       </p>
     );
   });
 
-  console.log(props.currentWorkId)
-
   let workColors = props.works.additional.colors.map((color) => {
-    return <div key = {color.id} className="colorEllipse" style={{ background: color.color }}></div>;
+    return <div key={color.id} className="colorEllipse" style={{ background: color.color }}></div>;
   });
 
   let whatIDid = props.works.additional.whatIDid.map((point) => {
-    return <p key = {point.id}> {point.name}</p>;
+    return <p key={point.id}> {point.name}</p>;
   });
 
   return (
     <div>
-      <header className="workHeader" style={{ backgroundImage: "url(" + props.works.workBackground + ")" }}>
+      <header
+        className="workHeader"
+        style={{ backgroundImage: "url(" + props.works.workBackground + ")" }}
+      >
         <div className="workIntro">
           <div className="workIntroText wrapper">
             <h1>{props.works.workName}</h1>
@@ -73,11 +80,7 @@ let KazTransGas = (props) => {
               <h3>TECHNOLOGY USED</h3>
               <p>{props.works.additional.technologyUsed}</p>
             </div>
-            <Button
-              btnUrl={props.works.onlineUrl}
-              btnTarget="_blank"
-              btnText="Visit site"
-            />
+            <Button btnUrl={props.works.onlineUrl} btnTarget="_blank" btnText="Visit site" />
           </div>
         </div>
       </div>
@@ -229,11 +232,7 @@ let KazTransGas = (props) => {
           </div> */}
         </div>
         <p className="viewAllParagraph">To view all sections, please go to the project website.</p>
-        <Button
-          btnUrl={props.works.onlineUrl}
-          btnTarget="_blank"
-          btnText="Visit site"
-        />
+        <Button btnUrl={props.works.onlineUrl} btnTarget="_blank" btnText="Visit site" />
       </div>
     </div>
   );

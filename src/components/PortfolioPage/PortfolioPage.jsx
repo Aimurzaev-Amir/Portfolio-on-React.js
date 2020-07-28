@@ -3,6 +3,8 @@ import Swiper from "react-id-swiper";
 import "swiper/css/swiper.css";
 import "./PortfolioPage.css";
 import { NavLink } from "react-router-dom";
+// import { Route, BrowserRouter } from "react-router-dom";
+// import KazTransGas from "./PortfolioPageWorks/KazTransGas";
 
 let PortfolioPage = (props) => {
   const params = {
@@ -22,7 +24,7 @@ let PortfolioPage = (props) => {
       el: ".swiper-pagination",
       clickable: true,
     },
-    loop: true,
+    loop: false,
   };
 
   let Works = props.works.map((work) => {
@@ -33,7 +35,7 @@ let PortfolioPage = (props) => {
           <h2>{work.whatIDid}</h2>
           <div className="buttonPage leftSideButton">
             <NavLink to={work.urlAdress} className="navItemLink">
-              <button onClick={() => {props.setWorkId(work.id);}} >View project</button>
+              <button onClick={() => {props.setWorkId(work.id)}} >View project</button>
             </NavLink>
           </div>
         </div>
