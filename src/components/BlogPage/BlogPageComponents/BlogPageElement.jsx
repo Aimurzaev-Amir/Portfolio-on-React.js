@@ -1,9 +1,10 @@
 import React from "react";
 import img from "../../../Redux/img/articles/article1/website-launch-checklist.png";
+import { NavLink } from "react-router-dom";
 
 let BlogPageElement = (props) => {
   return (
-    <div className="blogArticle">
+    <div className="blogArticle"> 
       <h1>{props.name}</h1>
       <hr />
       <div className="dateViews">
@@ -12,12 +13,12 @@ let BlogPageElement = (props) => {
       <img src={props.img} alt={props.imgDescr} />
       <article>{props.description}</article>
       <div className="buttonPage leftSideButton">
-        <a href={props.url}>
-          <button>Read more</button>
-        </a>
+        <NavLink to={props.url}>
+          <button onClick={() => {props.setArticleId(props.id)}}>Read more</button>
+        </NavLink> 
       </div>
     </div>
-  );
+  ); 
 };
 
 export default BlogPageElement;

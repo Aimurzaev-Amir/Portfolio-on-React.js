@@ -1,11 +1,12 @@
 import React from "react";
 import BlogPage from "./BlogPage";
+import { setArticleId } from "../../Redux/ArticlesReducer"
 import { connect } from "react-redux";
 
 let BlogPageContainer = (props) => {
     return(
-        <BlogPage articles={props.articles} />
-    )
+        <BlogPage articles={props.articles} setArticleId={props.setArticleId}/>
+    ) 
 }
 
 let mapStateToProps = (state) => {
@@ -14,4 +15,4 @@ let mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps, {})(BlogPageContainer);
+export default connect(mapStateToProps, { setArticleId })(BlogPageContainer);

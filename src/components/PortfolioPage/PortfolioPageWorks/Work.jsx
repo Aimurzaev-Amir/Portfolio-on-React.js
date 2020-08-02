@@ -3,9 +3,7 @@ import BlockTitleText from "../../../common/BlockTitle";
 import Button from "../../../common/Button";
 import "./PortfolioPageWorks.css";
 
-let KazTransGas = (props) => {
-  console.log(props.currentWorkId);
-
+let Work = (props) => {
   let workStyle = props.works.additional.textStyles.map((style) => {
     return (
       <p
@@ -17,11 +15,9 @@ let KazTransGas = (props) => {
       </p>
     );
   });
-
   let workColors = props.works.additional.colors.map((color) => {
     return <div key={color.id} className="colorEllipse" style={{ background: color.color }}></div>;
   });
-
   let whatIDid = props.works.additional.whatIDid.map((point) => {
     return <p key={point.id}> {point.name}</p>;
   });
@@ -238,4 +234,4 @@ let KazTransGas = (props) => {
   );
 };
 
-export default KazTransGas;
+export default Work;

@@ -5,8 +5,9 @@ import BlogPageElement from "./BlogPageComponents/BlogPageElement";
 let BlogPage = (props) => {
   let BlogPageElements = props.articles.map((article) => {
     return (
-      <BlogPageElement
+      <BlogPageElement  
         key={article.id}
+        id={article.id}
         name={article.articleName}
         date={article.articleDate}
         description={article.articleSmallDescription}
@@ -15,8 +16,9 @@ let BlogPage = (props) => {
         url={article.urlAdress}
         comments={article.comments}
         likes={article.likes}
+        setArticleId={props.setArticleId}
       />
-    );
+    ); 
   });
   return (
     <div className="bgBlue">
