@@ -7,7 +7,7 @@ let ArticleContainer = (props) => {
         <div>
             <Article article={props.articles[props.currentArticleId]} currentArticleId={props.currentArticleId} />
         </div>
-    )
+    ) 
 }
 
 let mapStateToProps = (state) => {

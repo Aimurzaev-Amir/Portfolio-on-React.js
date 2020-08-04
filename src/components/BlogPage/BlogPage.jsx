@@ -18,7 +18,7 @@ let BlogPage = (props) => {
         likes={article.likes}
         setArticleId={props.setArticleId}
       />
-    ); 
+    );  
   });
   return (
     <div className="bgBlue">
