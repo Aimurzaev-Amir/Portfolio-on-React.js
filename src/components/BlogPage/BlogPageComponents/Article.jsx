@@ -6,12 +6,13 @@ import ArticleBlock from "./ArticleBlock";
 let Article = (props) => {
   let ArticleBlocks = props.article.fullVersion.map((block) => {
     return (
-      <ArticleBlock
+      <ArticleBlock 
         key={block.id}
         sectionTitle={block.sectionTitle}
         sectionImg={block.sectionImg}
-        sectionImgDescr={block.sectionImgDescr}
+        // sectionImgDescr={block.sectionImgDescr}
         sectionText={block.sectionText}
+        sectionList={block.sectionList}
       />
     );
   });
