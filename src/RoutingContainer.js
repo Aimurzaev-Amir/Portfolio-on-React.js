@@ -9,6 +9,7 @@ import ArticleContainer from "./components/BlogPage/BlogPageComponents/ArticleCo
 import PortfolioPageContainer from "./components/PortfolioPage/PortfolioPageContainer";
 import WorkContainer from "./components/PortfolioPage/PortfolioPageWorks/WorkContainer";
 import Footer from "./components/footer/Footer";
+import AdminMenu from "./components/adminPanel/AdminMenu";
 // const PortfolioPageContainer = React.lazy(() => import("./components/PortfolioPage/PortfolioPageContainer"));
 // const BlogPageContainer = React.lazy(() => import("./components/BlogPage/BlogPageContainer"));
 const MainPage = React.lazy(() => import("./components/mainPage/MainPage"));
@@ -30,6 +31,7 @@ function App(props) {
       {/* <Route exact path="/blog" render={SuspenseHOC(BlogPageContainer)} /> */}
       <Route exact path="/blog" component={() => <BlogPageContainer /> } />
       <Route exact path={props.articles[props.currentArticleId].urlAdress} component={() => <ArticleContainer /> } />
+      <Route exact path="/admin" render={SuspenseHOC(AdminMenu)} />
       <Footer />
     </div>
   );

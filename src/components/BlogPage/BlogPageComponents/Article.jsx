@@ -5,7 +5,7 @@ import ArticleBlock from "./ArticleBlock";
 
 let Article = (props) => {
   let ArticleBlocks = props.article.fullVersion.map((block) => {
-    return (
+    return ( 
       <ArticleBlock 
         key={block.id}
         sectionTitle={block.sectionTitle}
