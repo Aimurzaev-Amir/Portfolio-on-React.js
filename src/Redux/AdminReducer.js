@@ -4,7 +4,6 @@ let initialState = {
   login: "aimurzaev",
   password: "3223",
   validation: false,
-//   message: null
 };
 
 const AdminReducer = (state = initialState, action) => {
@@ -14,15 +13,12 @@ const AdminReducer = (state = initialState, action) => {
         return {
           ...state,
           validation: true,
-        //   message: "hello sir!"
-        }
-      }
-      else{ 
-        return{
-            ...state,
-        validation: false,
-        // message: "fuck you, bitch!"
-        }
+        };
+      } else {
+        return {
+          ...state,
+          validation: false,
+        };
       }
     default:
       return state;

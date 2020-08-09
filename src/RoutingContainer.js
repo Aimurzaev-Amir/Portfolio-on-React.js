@@ -9,13 +9,17 @@ import ArticleContainer from "./components/BlogPage/BlogPageComponents/ArticleCo
 import PortfolioPageContainer from "./components/PortfolioPage/PortfolioPageContainer";
 import WorkContainer from "./components/PortfolioPage/PortfolioPageWorks/WorkContainer";
 import Footer from "./components/footer/Footer";
-import AdminMenu from "./components/adminPanel/AdminMenu";
+// import AdminPanel from "./components/adminPanel/AdminPanel";
 // const PortfolioPageContainer = React.lazy(() => import("./components/PortfolioPage/PortfolioPageContainer"));
 // const BlogPageContainer = React.lazy(() => import("./components/BlogPage/BlogPageContainer"));
 const MainPage = React.lazy(() => import("./components/mainPage/MainPage"));
 const AboutMePage = React.lazy(() => import("./components/aboutMePage/AboutMePage"));
 const FeedbackForm = React.lazy(() =>
   import("./components/mainPage/Components/FeedbackForm/FeedbackForm")
+);
+const AdminPanel = React.lazy(() => import("./components/adminPanel/AdminPanel"));
+const AdminPanelMenu = React.lazy(() =>
+  import("./components/adminPanel/AdminPanelComponents/AdminPanelMenu")
 );
 
 function App(props) {
@@ -26,24 +30,33 @@ function App(props) {
       <Route exact path="/about-me" render={SuspenseHOC(AboutMePage)} />
       <Route exact path="/contacts" render={SuspenseHOC(FeedbackForm)} />
       {/* <Route exact path="/portfolio" render={SuspenseHOC(PortfolioPageContainer)} /> */}
-      <Route exact path="/portfolio" component={() => <PortfolioPageContainer /> } />
-      <Route exact path={props.works[props.currentWorkId].urlAdress} component={() => <WorkContainer /> } />
+      <Route exact path="/portfolio" component={() => <PortfolioPageContainer />} />
+      <Route
+        exact
+        path={props.works[props.currentWorkId].urlAdress}
+        component={() => <WorkContainer />}
+      />
       {/* <Route exact path="/blog" render={SuspenseHOC(BlogPageContainer)} /> */}
-      <Route exact path="/blog" component={() => <BlogPageContainer /> } />
-      <Route exact path={props.articles[props.currentArticleId].urlAdress} component={() => <ArticleContainer /> } />
-      <Route exact path="/admin" render={SuspenseHOC(AdminMenu)} />
+      <Route exact path="/blog" component={() => <BlogPageContainer />} />
+      <Route
+        exact
+        path={props.articles[props.currentArticleId].urlAdress}
+        component={() => <ArticleContainer />}
+      />
+      <Route exact path="/authorization" render={SuspenseHOC(AdminPanel)} />
+      <Route exact path="/admin" render={SuspenseHOC(AdminPanelMenu)} />
       <Footer />
     </div>
   );
 }
 
 let mapStateToProps = (state) => {
-    return {
-      works: state.works.Works,
-      currentWorkId: state.works.currentWorkId,
-      articles: state.articles.Articles,
-      currentArticleId: state.articles.currentArticleId,
-    };
+  return {
+    works: state.works.Works,
+    currentWorkId: state.works.currentWorkId,
+    articles: state.articles.Articles,
+    currentArticleId: state.articles.currentArticleId,
   };
+};
 
 export default connect(mapStateToProps, {})(App);
